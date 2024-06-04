@@ -12,7 +12,6 @@ import animation2 from '../../images/animation2.gif'
 import animation4 from '../../images/animation4.jpg'
 
 import map from '../../images/map.mp4'
-import clientImage from '../../images/clientImage.jpg'
 import clientImage2 from '../../images/clientImage2.jpg'
 import clientImage3 from '../../images/clientImage3.jpg'
 
