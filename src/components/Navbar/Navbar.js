@@ -17,7 +17,7 @@ const Navbar = () => {
     <header className=' z-10 bg-white  fixed right-0   left-0  top-0 sm:w-full  '>
       <div className="  sm:w-930 sm:h-70  px-4  h-m-60 flex items-center justify-between m-auto   ">
         <div className="logo  h-37 w-90 w-100">
-          <a href="/"><img className='w-full align-middle' src={logo} valt="logo-img" /></a>
+          <a href="/"><img className='w-full align-middle' src={logo} alt="logo-img" /></a>
         </div>
 
         <ul className="hidden sm:flex text-black navigation">
