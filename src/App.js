@@ -1,16 +1,18 @@
 import './App.css';
-import {Route,Routes,BrowserRouter} from 'react-router-dom'
+import {Route,Routes,BrowserRouter as Router} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar.js';
 import Home from './components/Home/Home.js';
+import Footer from './components/Footer/Footer.js';
 function App() {
   return (
     <>
-    <BrowserRouter>
+    <Router>
     <Navbar/>
       <Routes>
       <Route path='/' element={<Home/>}/>
       </Routes>
-    </BrowserRouter>
+      <Footer/>
+    </Router>
     </>
   );
 }

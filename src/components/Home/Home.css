@@ -26,9 +26,6 @@
     top: 1rem;
 }
 
-section {
-    height: 700px;
-}
 
 .image-container {
     position: relative;
@@ -37,4 +34,8 @@ section {
 
 .trans{
     transition: all 0.3s ease-in;
+}
+
+.liner-gradient{
+    background: linear-gradient(to bottom, #321575 0, #8d0b93 100%)
 }

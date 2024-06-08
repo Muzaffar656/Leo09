@@ -80,7 +80,7 @@ const Home = () => {
     <section className=' relative sm:top-56 top-40  flex flex-col '>
       <div className='flex gap-4 flex-col sm:container  max-w-4xl px-2 m-auto'>
       
-      <div className='text-6xl font-bold'>
+      <div className='text-6xl font-bold main-text'>
         <h1 className='mb-2'>Design</h1>
         <h1 className='mb-2'>Transform</h1>
         <h1>Accelerate</h1>
@@ -172,7 +172,7 @@ const Home = () => {
       <div>
         <section className=' flex flex-col   sm:grid grid-cols-3 gap-5 mt-36 mb-52 px-10  '>
 
-          <div className='red-container  flex flex-col justify-center gap-4 sm:py-0 py-36 mt-6 items-center text-center '>
+          <div className='red-container  flex flex-col justify-center gap-4  py-36 mt-6 items-center text-center '>
             <h1 className=' text-white text-4xl font-bold ' >RIGI</h1>
             <p className=' text-white text-xl'>Innovated Community Empoverment Website</p>
             {/* <span className=' text-white text-xl'> Website </span> */}
@@ -185,7 +185,7 @@ const Home = () => {
           </div>
 
 
-          <div className='purple-container  flex flex-col justify-center gap-4 sm:py-0 py-36 mt-6  items-center text-center '>
+          <div className='purple-container  flex flex-col justify-center gap-4  py-36 mt-6  items-center text-center '>
             <h1 className=' text-white text-4xl font-bold ' >Nirmal Bang</h1>
             <p className=' text-white text-xl'>Engineered Investment Experience</p>
             {/* <span className=' text-white text-xl'> Website </span> */}
@@ -197,7 +197,7 @@ const Home = () => {
 
           </div>
 
-          <div className='blue-container  flex flex-col justify-center gap-4  sm:py-0 py-36 mt-6  items-center text-center '>
+          <div className='blue-container  flex flex-col justify-center gap-4   py-36 mt-6  items-center text-center '>
             <h1 className=' text-white text-4xl font-bold ' >BMW</h1>
             <p className=' text-white text-xl'><p>Optimized the effortless on-the-go lifestyle</p></p>
             {/* <span className=' text-white text-xl'> Website </span> */}
@@ -215,7 +215,7 @@ const Home = () => {
 
       {/* project counter */}
 
-      <div className=' text-center w-full mt-96 pt-24 ' >
+      <div className=' text-center w-full' >
 
         <h1 className='sm:text-6xl text-4xl  font-bold'>260+ Projects Delivered</h1>
         <h3 className='mb-11 sm:text-6xl text-4xl  font-bold'>and counting more..</h3>
@@ -269,14 +269,14 @@ const Home = () => {
 
       <div className='mt-12'>
 
-        <div className="container max-w-6xl   m-auto py-12  ">
+        <div className="container max-w-6xl  px-10  py-12  ">
           <Slider {...settings}>
             {
               data.map((el, index) => {
                 return (
-                  <div key={index} className="bg-client  rounded-md  py-12 " >
+                  <div key={index} className="bg-client    rounded-md  py-12 h-full " >
 
-                    <div className='flex justify-between m-auto w-4/5 items-center '>
+                    <div className='flex justify-between m-auto w-4/5 items-center flex-col sm:flex-row '>
 
                       <div className=' flex flex-col justify-center text-center'>
                         <div className=' w-20 h-20 ml-auto mr-auto'>
@@ -291,7 +291,7 @@ const Home = () => {
                       <div className=' w-3/5'>
                         <h1 className=' text-2xl font-bold'>{el.clientTitle}</h1>
                         <img src={el.startImg} alt="starsImg" className='mt-5 h-8' />
-                        <p className='text-2xl font-normal leading-9 mt-6'>{el.Description}</p>
+                        <p className='sm:text-2xl font-normal sm:leading-9 leading-7 mt-5 sm:mt-6'>{el.Description}</p>
                       </div>
                     </div>
 
@@ -335,66 +335,16 @@ const Home = () => {
       {/* DropDownText End-------------- */}
 
       {/* color container */}
-      <div className='mt-24 rounded-sm' >
-        <div className=' container m-auto h-96 flex items-center justify-center text-center leading-6 bg-purple-500'>
+      <div className='mt-24 rounded-sm liner-gradient' >
+        <div className=' container m-auto h-96 flex items-center justify-center text-center leading-6'>
             <h1 className='text-white font-bold sm:text-6xl text-4xl'>Let’s create a measurable<br />
 impact on your business.</h1>
 
         </div>
       </div>
       {/* color container End---------- */}
-
-            <footer className='mt-20 text-center'>
-              <div className="container m-auto flex flex-col sm:flex-row gap-24">
-                <div>
-                  <h4 className='text-3xl font-bold '>Leo9 <br /> Studio</h4>
-                  <ul className='flex h-9 mt-4 justify-center '>
-                    <li className='mr-6'><SlSocialFacebook /></li>
-                    <li className='mr-6'><SlSocialLinkedin /></li>
-                    <li className='mr-6'><SlSocialInstagram /></li>
-                    <li className='mr-6'><SlSocialDribbble /></li>
-                  </ul>
-                  <div className='text-xl font-medium'>
-                  © Leo9Studio. <br /> All rights reserved 2023
-                  </div>
-                </div>
-                <div>
-                  <h4 className='text-2xl font-bold '>Services</h4>
-                  <ul className='mt-3'>
-                    <li className='text-xl font-normal mb-3 '>Designs</li>
-                    <li className='text-xl font-normal mb-3'>Technology</li>
-                    <li className='text-xl font-normal mb-3'>Neuromarketing</li>
-                    <li className='text-xl font-normal mb-3'>Digital Marketing</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className='text-2xl font-bold '>About</h4>
-                  <ul className='mt-3'>
-                    <li className='text-xl font-normal mb-3 '>About Us</li>
-                    <li className='text-xl font-normal mb-3'>Team</li>
-                    <li className='text-xl font-normal mb-3'>Career</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className='text-2xl font-bold '>Quick Links</h4>
-                  <ul className='mt-3'>
-                    <li className='text-xl font-normal mb-3 '>Work</li>
-                    <li className='text-xl font-normal mb-3'>Client</li>
-                    <li className='text-xl font-normal mb-3'>Blog</li>
-                    <li className='text-xl font-normal mb-3'>Reach Us</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className='text-2xl font-bold '>Quick Links</h4>
-                  <ul className='mt-3'>
-                    <li className='text-xl font-normal mb-3 '>Privacy Policy</li>
-                    <li className='text-xl font-normal mb-3'>Terms of use</li>
-                    <li className='text-xl font-normal mb-3'>Site Map</li>
-                    <li className='text-xl font-normal mb-3'>Refund Policy</li>
-                  </ul>
-                </div>
-              </div>
-            </footer>
+  
+          
     </section>
 
   )
