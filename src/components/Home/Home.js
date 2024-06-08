@@ -26,10 +26,6 @@ import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
-import { SlSocialFacebook } from "react-icons/sl";
-import { SlSocialLinkedin } from "react-icons/sl";
-import { SlSocialInstagram } from "react-icons/sl";
-import { SlSocialDribbble } from "react-icons/sl";
 const Home = () => {
   const [showBar, setShowBar] = useState(false)
   const handleshowBar = () => {
