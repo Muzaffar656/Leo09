@@ -265,17 +265,17 @@ const Home = () => {
 
       <div className='mt-12'>
 
-        <div className="container max-w-6xl  px-10  py-12  ">
+        <div className="container max-w-6xl  px-10  py-12  m-auto">
           <Slider {...settings}>
             {
               data.map((el, index) => {
                 return (
                   <div key={index} className="bg-client    rounded-md  py-12 h-full " >
 
-                    <div className='flex justify-between m-auto w-4/5 items-center flex-col sm:flex-row '>
+                    <div className='flex justify-between m-auto sm:w-4/5 text-center sm:text-left items-center flex-col sm:flex-row '>
 
                       <div className=' flex flex-col justify-center text-center'>
-                        <div className=' w-20 h-20 ml-auto mr-auto'>
+                        <div className=' w-20 h-20 ml-auto mr-auto text-center'>
 
                           <img className=' rounded-full h-full w-full' src={el.img} alt="clientImage" />
                         </div>

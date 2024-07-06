@@ -3,6 +3,7 @@ import './Navbar.css'
 import logo from '../../images/leo09_logo.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5"
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const handleNavbar= ()=>{
     let ul = document.querySelector('.mobilenavbar')
@@ -26,7 +27,7 @@ const Navbar = () => {
           <li className='px-5'><a href="/Clients" className='text-black text-14 hover:text-red-500'>Clients</a></li>
           <li className='px-5'><a href="/About" className=' text-black text-14 hover:text-red-500'>About</a></li>
           <li className='px-5'><a href="/Knowledge" className='text-black text-14 hover:text-red-500'>Knowledge</a></li>
-          <li className='px-5 pr-5'><a href="/button" className='bg-black px-14 py-4 text-white rounded-md'>Contact</a></li>
+          <li className='px-5 pr-5'><Link to={"/contact"} className='bg-black px-14 py-4 text-white rounded-md'>Contact</Link></li>
         </ul>
 
         <ul style={{boxShadow:"0 0 20px rgba(0,0,0,0.1)"}} className='mobilenavbar h-screen absolute bg-white mobile z-20  sm:hidden  flex flex-col rights   w-96 top-0  px-10 '>
@@ -48,7 +49,7 @@ const Navbar = () => {
               +1 (802) 347-3690
               </a></li>
           </ul>
-              <a href="/contact" className=' border text-center font-bold text-2xl py-3 border-gray-950 rounded-sm mt-4 hover:bg-black hover:text-white hover:border-gray-100 w-full '>Contact</a>
+              <Link to={"/contact"} className=' border text-center font-bold text-2xl py-3 border-gray-950 rounded-sm mt-4 hover:bg-black hover:text-white hover:border-gray-100 w-full '>Contact</Link>
         </ul>
 
         <div className='sm:hidden w-10 h-10 '>
