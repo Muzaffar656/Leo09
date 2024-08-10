@@ -32,3 +32,22 @@ header{
     transition: 1s;
 }
 
+.bropbox{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+.drop:hover .bropbox{
+opacity: 1; 
+visibility: visible;
+}
+.drop:hover header{
+    box-shadow: none;
+}
+
+.navigation li{
+    position: relative;
+}

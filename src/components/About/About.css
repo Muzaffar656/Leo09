@@ -1,0 +1,16 @@
+.screen-img{
+    max-width: 20vw;
+
+}
+.screen{
+    
+    justify-content: space-between;
+    width: 100%;
+    left: 0px;
+    top: 238px;
+
+}
+
+.about {
+    color: #8080ff;
+}

@@ -2,7 +2,10 @@
     max-width: 930px;
     margin: auto;
 }
-
+form input:checked+label {
+    color: white;
+    background: #5857f9;
+}
 form input {
     border: none;
     border-bottom: 1px solid #e1e1e1;
